@@ -1,5 +1,3 @@
-pip install linedify
-
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request, BackgroundTasks
 from linedify import LineDify
