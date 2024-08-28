@@ -7,9 +7,9 @@ import os
 line_dify = LineDify(
     line_channel_access_token=os.getenv('YOUR_CHANNEL_ACCESS_TOKEN'),
     line_channel_secret=os.getenv('YOUR_CHANNEL_SECRET'),
-    dify_api_key=DIFY_API_KEY,
-    dify_base_url=DIFY_BASE_URL,    # e.g. http://localhost/v1
-    dify_user=DIFY_USER,
+    dify_api_key=os.getenv('DIFY_API_KEY'),
+    dify_base_url=os.getenv('DIFY_BASE_URL'),    # e.g. http://localhost/v1
+    dify_user=os.getenv('DIFY_USER'),
     dify_type=DifyType.Chatbot
 )
 
